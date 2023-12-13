@@ -1,0 +1,39 @@
+{
+    "city_name": "Belgrade",
+    "vehicle": {
+        "license_plate": "ABC123",
+        "type":"Car",
+        "tax_excluded": false,
+        "times":["2013-11-07T11:00:00Z","2013-11-07T11:25:00Z","2013-11-07T11:45:00Z"]
+    },
+    "tax_rules": {
+        "hourly_prices": [
+          {
+            "start_hour": 0,
+            "end_hour": 7,
+            "rate": 5
+          },
+          {
+            "start_hour": 8,
+            "end_hour": 11,
+            "rate": 10
+          },
+          {
+            "start_hour": 12,
+            "end_hour": 17,
+            "rate": 8
+          },
+          {
+            "start_hour": 18,
+            "end_hour": 23,
+            "rate": 12
+          }
+        ],
+      "tax_on_weekend": false,
+      "excluded_months": [1,2,3],
+      "max_taxed_fee": 60,
+      "excluded_dates": ["2013-10-07T11:25:00Z", "2013-10-07T11:25:00Z"],
+      "excluded_days": [2, 3, 4],
+      "default_hourly_price": 7
+    }
+  }
